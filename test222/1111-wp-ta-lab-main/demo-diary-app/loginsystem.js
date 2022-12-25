@@ -87,7 +87,7 @@ const login = () => {
       console.log("user: ", user);
       console.log("userEmail: ", user.email);
       document.querySelector(".login").style.display = "none";
-      document.querySelector(".container").style.display = "block";
+
     })
     .catch((error) => {
       alert("Something was wrong.");
