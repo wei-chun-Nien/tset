@@ -87,6 +87,7 @@ const login = () => {
       const user = result.user;
       console.log("user: ", user);
       console.log("userEmail: ", user.email);
+      alert("Welcome to 富士大學堂" + user);
 /*
       document.querySelector(".login").style.display = "none";
 */
