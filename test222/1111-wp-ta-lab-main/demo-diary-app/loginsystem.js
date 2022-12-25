@@ -19,7 +19,7 @@
 // } from "firebase/firestore";
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
-//import { getAnalytics } from "firebase/analytics";
+import { getAnalytics } from "firebase/analytics";
 import {
   getAuth,
   deleteUser,
