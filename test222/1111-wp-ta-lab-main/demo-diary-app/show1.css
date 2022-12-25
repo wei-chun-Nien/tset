@@ -1,0 +1,228 @@
+*{
+  font-family:微軟正黑體;  
+  margin: 0;
+    padding: 0;
+
+}
+
+body{
+            background-image: url("https://rimage.gnst.jp/livejapan.com/public/article/detail/a/00/02/a0002104/img/zh-tw/a0002104_main.jpg?20210212121114&q=80&rw=750&rh=536");
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+            background-size: 100%;
+        }
+
+#username, #password, h3, #fullname, #comfirm_password,#username2, #password2{
+  width: 200px;
+  height: 20px;
+  margin: 10px;
+  color: #df5334;
+}
+
+h5{
+  margin: 15px;
+  color: #a3a2a3;
+}
+
+h5:hover{
+  color: black;
+}
+
+#container1, #container2{
+  margin: 50px;
+  padding: 10px;
+  width: 230px;
+  height: 350px;
+  background-color: white;
+  border-radius: 5px;
+  border-top: 10px solid #df5334;
+  box-shadow: 0 0px 70px rgba(0, 0, 0, 0.1);
+  
+  /*定位對齊*/
+  position:relative;   
+  margin: auto;
+  top: 100px;
+  text-align:center;  
+}
+h1{
+  text-align: center;
+}
+.system_name{
+  /*定位對齊*/
+  position:relative;   
+  margin: auto;
+  top: 100px;
+  text-align:center; 
+}
+
+.submit{
+  color: white;  
+  background: #df5334;
+  width: 200px;
+  height: 30px;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 0px;
+}
+
+.submit:hover{
+  background: #db6937;
+}
+
+#container2{
+  visibility: hidden;   /*剛開始消失*/
+  height: 350px;
+}
+
+
+#copyright{
+  text-align: center;
+  color: #a3a2a3;
+  margin: -200px 0px 0px 0px;
+  font-size: 14px;
+}
+
+input{
+  padding: 5px;
+  border: none; 
+  border:solid 5px skyblue;
+  border-radius: 5px;
+}
+.helpcard{
+  width: 200px;
+  position: absolute;
+  top:550px;
+  left:500px;
+  border: 10px navy solid;
+}
+.dismisscard{
+ width: 200px;
+ position: absolute;
+  top:550px;
+  left:900px;
+  border:10px aqua solid;
+}
+.text{
+  position: absolute;
+  color:yellow;
+  top:450px;
+  left:940px;
+  font-size: 50px;
+  border: 5px black solid;
+}
+.text1{
+  position: absolute;
+  color:orangered;
+  top:450px;
+  left:540px;
+  font-size: 50px;
+  border: 5px black solid;
+}
+.start{
+  position: absolute;
+   top:190px;
+   width:140px;height:50px;color:navy ; 
+   font-size: 20px;
+            
+}
+ .login1{
+ position: absolute;
+ font-size: 20px;
+top:10px;
+width:140px;
+height:50px;
+color:navy ; 
+
+        }
+.login2{
+  border: 5px,aqua,solid;
+}
+.video{
+  position: absolute;
+ font-size: 20px;
+  top:100px;
+  width:140px;height:50px;color:navy ; 
+}
+input:hover{
+  background-color: #db6937;
+}
+.box .circle:nth-child(1) {
+  top: -50px;
+  right: -60px;
+  width: 100px;
+  height: 100px;
+}
+
+.box .circle:nth-child(2) {
+  top: 150px;
+  left: -100px;
+  width: 120px;
+  height: 120px;
+  z-index: 2;
+}
+
+.box .circle:nth-child(3) {
+  bottom: 50px;
+  right: -60px;
+  width: 80px;
+  height: 80px;
+  z-index: 2;
+}
+
+.box .circle:nth-child(4) {
+  bottom: -80px;
+  left: 100px;
+  width: 60px;
+  height: 60px;
+}
+
+.box .circle:nth-child(5) {
+  top: -80px;
+  left: 140px;
+  width: 60px;
+  height: 60px;
+}
+.box {
+  position: relative;
+}
+
+/* 背景圓樣式 */
+
+.box .circle {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.1);
+  /* backdrop-filter屬性為一個元素後面區域新增模糊效果 */
+  backdrop-filter: blur(5px);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  /* 使用filter(濾鏡) 屬性，改變顏色。
+  hue-rotate(deg)  給影象應用色相旋轉 
+  calc() 函式用於動態計算長度值 
+  var() 函式呼叫自定義的CSS屬性值x*/
+  filter: hue-rotate(calc(var(--x) * 70deg));
+  /* 呼叫動畫animate，需要10s完成動畫，
+  linear表示動畫從頭到尾的速度是相同的，
+  infinite指定動畫應該迴圈播放無限次*/
+  animation: animate 10s linear infinite;
+  /* 動態計算動畫延遲幾秒播放 */
+  animation-delay: calc(var(--x) * -1s);
+}
+.panda{
+  position: absolute;
+  bottom:0;
+    right:0;
+    height: 400px;
+    width: 400px;
+}
+.panda1{
+  position: absolute;
+  bottom:0;
+    left:0;
+    height: 400px;
+    width: 400px;
+}
