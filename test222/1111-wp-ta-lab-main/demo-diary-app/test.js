@@ -587,20 +587,12 @@ function textRenderer (seconds) {
     function showPreviousSlide() {
       showSlide(currentSlide - 1);
     }
-    function maydayfunction(){
-      alert("您使用了求救卡!!");
 
-    }
-    function vanishfunction(){
-      alert("您使用了刪減卡!!");
-
-    }
 
     const quizContainer = document.getElementById("quiz");
     const resultsContainer = document.getElementById("results");
     const submitButton = document.getElementById("submit");
-    const mayday = document.getElementById("mayday");
-    const vanish = document.getElementById("vanish");
+
 
     // display quiz right away
     buildQuiz();
@@ -616,7 +608,5 @@ function textRenderer (seconds) {
     submitButton.addEventListener("click", showResults);
     previousButton.addEventListener("click", showPreviousSlide);
     nextButton.addEventListener("click", showNextSlide);
-    mayday.addEventListener("dblclick",maydayfunction);
-    vanish.addEventListener("dblclick",vanishfunction);
     
   })();
