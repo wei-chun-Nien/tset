@@ -4,12 +4,29 @@
     <meta charset="utf-8">
     <title>rich knowledge of king</title>
     <link href="show1.css" rel="stylesheet">
- 
+ <script>
+
+window.onload = function(){
+    setInterval("toggleSound()",100);
+}
+
+function toggleSound() {
+       var music = document.getElementById("sounds");//获取ID  
+           
+       if (music.paused) { //判读是否播放  
+           music.paused=false;
+           music.play(); //没有就播放 
+       }    
+}
+
+ </script>
 </head>
 <body>
  
   <H1><marquee behavior="scroll"  bgcolor="#B2B200" width="500" height="50" >歡迎光臨富士大學堂~</marquee></H1>
- 
+  <audio id="sounds" loop>
+    <source src="yt1s.com - 可愛 Cute  Bensound 免費音樂庫 No Copyright Music.mp3">
+  </audio> 
   <div class="login">
   <input id="login" class="login1" type="button" value="登入"  ></input>
   <a href="https://www.youtube.com/watch?v=yK9nqKY-8o4&list=PLvwmO12a3QmlPywyTe9AHOhJ4zqIg9KBo" target="_blank"><input class="video" type="button" value="介紹影片" ></a>
