@@ -83,11 +83,12 @@ const login = () => {
       // console.log("credential: ", credential);
       const token = credential.accessToken;
       // console.log("token: ", token);
+    /*
       const user = result.user;
       console.log("user: ", user);
       console.log("userEmail: ", user.email);
       document.querySelector(".login").style.display = "none";
-
+*/
     })
     .catch((error) => {
       alert("Something was wrong.");
