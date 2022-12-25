@@ -68,36 +68,7 @@ button:hover{
   margin-top: 40px;
 }
 
-.helpcard{
-  width: 200px;
-  position: absolute;
-  top:550px;
-  left:500px;
-  border: 10px navy solid;
-}
-.dismisscard{
- width: 200px;
- position: absolute;
-  top:550px;
-  left:900px;
-  border:10px aqua solid;
-}
-.card1{
-  position: absolute;
-  color:yellow;
-  top:450px;
-  left:940px;
-  font-size: 50px;
-  border: 5px black solid;
-}
-.card2{
-  position: absolute;
-  color:orangered;
-  top:450px;
-  left:540px;
-  font-size: 50px;
-  border: 5px black solid;
-}
+
 @media only screen and (max-width:600px) {
   p{
       overflow: hidden;
