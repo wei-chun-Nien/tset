@@ -65,8 +65,9 @@ const start = () => {
   document.getElementById("login").addEventListener("click", login);
   document.getElementById("rank").addEventListener("click",createContent);
 
-  /*
+  
   document.getElementById("logout").addEventListener("click", logout);
+  /*
   document
     .getElementById("delete-account")
     .addEventListener("click", deleteAccount);
@@ -133,7 +134,7 @@ const createContent = () => {
   }
 };
 
-/*
+
 const logout = () => {
   auth
     .signOut()
@@ -147,7 +148,7 @@ const logout = () => {
       console.log("error: ", error);
     });
 };
-
+/*
 const deleteAccount = () => {
   const user = auth.currentUser;
   deleteUser(user)
