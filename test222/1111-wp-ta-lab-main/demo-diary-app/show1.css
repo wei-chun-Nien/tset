@@ -35,22 +35,7 @@ h1{
   left:900px;
   border:10px aqua solid;
 }
-.text{
-  position: absolute;
-  color:yellow;
-  top:450px;
-  left:940px;
-  font-size: 50px;
-  border: 5px black solid;
-}
-.text1{
-  position: absolute;
-  color:orangered;
-  top:450px;
-  left:540px;
-  font-size: 50px;
-  border: 5px black solid;
-}
+
 .start{
   position: absolute;
    top:190px;
@@ -67,9 +52,6 @@ height:50px;
 color:navy ; 
 
         }
-.login2{
-  border: 5px,aqua,solid;
-}
 .video{
   position: absolute;
  font-size: 20px;
