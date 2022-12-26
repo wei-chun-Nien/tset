@@ -63,7 +63,8 @@ const db = getFirestore();
 
 const start = () => {
   document.getElementById("login").addEventListener("click", login);
-  document.getElementById("submit").addEventListener("click",insert);
+  document.getElementById("submit").addEventListener("click",createContent);
+
   /*
   document.getElementById("logout").addEventListener("click", logout);
   document
@@ -112,13 +113,24 @@ const login = () => {
     });
 };
 
-const insert = () => {
-  setDoc(doc(db, "cities", "LA"), {
-    name: "Los Angeles",
-    state: "CA",
-    country: "USA"
-  });
-}
+const createContent = () => {
+  const userEmail = auth.currentUser.email;
+  const grade = numCorrect;
+  const diaryTitle = document.getElementById("diary-title").value;
+
+  try {
+    setDoc(doc(db, userEmail, grade), {
+      timestamp: new Date(Date.now()),
+      grade: grade,
+
+    });
+    alert('Created: "' + diaryTitle + '"');
+
+  } catch (err) {
+    alert("Something was wrong.");
+    console.error("Error: ", err);
+  }
+};
 
 /*
 const logout = () => {
@@ -149,24 +161,7 @@ const deleteAccount = () => {
     });
 };
 
-const createContent = () => {
-  const userEmail = auth.currentUser.email;
-  const diaryTitle = document.getElementById("diary-title").value;
-  const diaryContent = document.getElementById("diary-content").value;
-  try {
-    setDoc(doc(db, userEmail, diaryTitle), {
-      timestamp: new Date(Date.now()),
-      title: diaryTitle,
-      content: diaryContent,
-    });
-    alert('Created: "' + diaryTitle + '"');
-    document.getElementById("diary-title").value = "";
-    document.getElementById("diary-content").value = "";
-  } catch (err) {
-    alert("Something was wrong.");
-    console.error("Error: ", err);
-  }
-};
+
 
 const readContent = () => {
   document.getElementById("diary-content").value = "";
