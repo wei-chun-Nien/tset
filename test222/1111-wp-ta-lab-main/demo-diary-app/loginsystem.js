@@ -116,7 +116,7 @@ const login = () => {
 const createContent = () => {
   const userEmail = auth.currentUser.email;
   const grade = numCorrect;
-  const diaryTitle = document.getElementById("diary-title").value;
+
 
   try {
     setDoc(doc(db, userEmail, grade), {
@@ -124,7 +124,7 @@ const createContent = () => {
       grade: grade,
 
     });
-    alert('Created: "' + diaryTitle + '"');
+    alert('Created: "' + grade + '"');
 
   } catch (err) {
     alert("Something was wrong.");
