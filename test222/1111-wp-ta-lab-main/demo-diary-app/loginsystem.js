@@ -116,7 +116,8 @@ const login = () => {
 const createContent = () => {
   const userEmail = auth.currentUser.email;
   const grade = numCorrect;
-
+  console.log(grade);
+  alert(grade);
 
   try {
     setDoc(doc(db, userEmail, grade), {
