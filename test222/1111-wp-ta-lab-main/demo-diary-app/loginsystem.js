@@ -65,7 +65,7 @@ const start = () => {
 
   document.getElementById("login").addEventListener("click", login);
   
-  document.getElementById("rank").addEventListener("click", createContent);
+  //document.getElementById("rank").addEventListener("click", createContent);
   
   document.getElementById("logout").addEventListener("click", logout);
   /*
