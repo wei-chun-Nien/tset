@@ -63,7 +63,14 @@ const db = getFirestore();
 
 const start = () => {
   document.getElementById("login").addEventListener("click", login);
-  document.getElementById("rank").addEventListener("click",createContent);
+ 
+  let k = document.getElementById("rank");
+  if(k){
+    k.addEventListener("click",createContent);
+  }
+  else{
+    alert("oops!");
+  }
 
   
   document.getElementById("logout").addEventListener("click", logout);
