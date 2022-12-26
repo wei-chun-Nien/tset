@@ -80,13 +80,13 @@ const login = () => {
     
     .then((result) => {
       const user = result.user;
-      alert("Welcome to 富士大學堂" + user);
+      
       const credential = GoogleAuthProvider.credentialFromResult(result);
       // console.log("credential: ", credential);
       const token = credential.accessToken;
       // console.log("token: ", token);
     
-      
+      alert("Welcome to 富士大學堂" + user+ result);
       console.log("user: ", user);
       console.log("userEmail: ", user.email);
       
