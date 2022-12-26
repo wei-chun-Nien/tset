@@ -30,27 +30,10 @@
     <div id="help card">
       <img id="mayday" src="求救卡.png" class="helpcard">
       <img  id="vanish" src="消去卡.png" class="dismisscard">
-      <span  class="card1">消去卡</span>
+      <span  class="card1">好人卡</span>
       <span  class="card2">求救卡</span>
   </div>
     <script src="test.js"></script>
 
-
-    <script>
-
-
-
-      $("#mayday").dblclick(function(){
-         $(".card2").slideToggle();
-         $("#mayday").slideToggle();
-         alert("您使用了求救卡");
-      });
-      $("#vanish").dblclick(function(){
-         $(".card1").slideToggle();
-         $("#vanish").slideToggle();
-         alert("您使用了消去卡");
-      });
-
-    </script>
 </body>
 </html>
