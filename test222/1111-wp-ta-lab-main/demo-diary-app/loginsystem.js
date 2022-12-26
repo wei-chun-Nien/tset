@@ -63,7 +63,7 @@ const db = getFirestore();
 
 const start = () => {
   document.getElementById("login").addEventListener("click", login);
-  //document.getElementById("rank").addEventListener("click",createContent);
+  document.getElementById("rank").addEventListener("click",createContent);
 
   
   document.getElementById("logout").addEventListener("click", logout);
@@ -117,10 +117,11 @@ const login = () => {
 const createContent = () => {
   const userEmail = auth.currentUser.email;
   const grade = numCorrect;
-  console.log(grade);
-  alert(grade);
+  
 
   try {
+    console.log(grade);
+    alert(grade);
     setDoc(doc(db, userEmail, grade), {
       timestamp: new Date(Date.now()),
       grade: grade,
