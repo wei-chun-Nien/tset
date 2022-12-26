@@ -48,5 +48,21 @@
       <span id="mayday" class="card2">求救卡</span>
   </div>
     <script src="test.js"></script>
+        <script>
+
+
+
+      $("#mayday").dblclick(function(){
+         $(".card2").slideToggle();
+         $("#mayday").slideToggle();
+         alert("您使用了求救卡");
+      });
+      $("#vanish").dblclick(function(){
+         $(".card1").slideToggle();
+         $("#vanish").slideToggle();
+         alert("您使用了消去卡");
+      });
+
+    </script>
 </body>
 </html>
