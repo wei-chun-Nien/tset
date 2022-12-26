@@ -594,6 +594,7 @@ function textRenderer (seconds) {
     const submitButton = document.getElementById("submit");
 
 
+
     // display quiz right away
     buildQuiz();
 
@@ -607,6 +608,9 @@ function textRenderer (seconds) {
     // on submit, show results
     submitButton.addEventListener("click", showResults);
     previousButton.addEventListener("click", showPreviousSlide);
-    nextButton.addEventListener("click", showNextSlide);
     
+    nextButton.addEventListener("click", showNextSlide);
+/*
+    maydays.addEventListener("dblclick",mayday);
+    */
   })();
