@@ -490,7 +490,7 @@ function textRenderer (seconds) {
         correctAnswer: "D"
       }
     ];
-  
+    
     function buildQuiz() {
       // we'll need a place to store the HTML output
       const output = [];
@@ -589,9 +589,11 @@ function textRenderer (seconds) {
     }
 
 
+
     const quizContainer = document.getElementById("quiz");
     const resultsContainer = document.getElementById("results");
     const submitButton = document.getElementById("submit");
+  
 
 
 
@@ -610,7 +612,24 @@ function textRenderer (seconds) {
     previousButton.addEventListener("click", showPreviousSlide);
     
     nextButton.addEventListener("click", showNextSlide);
-/*
-    maydays.addEventListener("dblclick",mayday);
-    */
+
+    let array = ["A","B","C","D"];
+    $("#mayday").dblclick(function(){
+      $(".card2").slideToggle();
+      $("#mayday").slideToggle();
+      alert("您使用了求救卡");
+      
+      alert("正確答案為 : " + myQuestions[currentSlide].correctAnswer);
+      
+   });
+   $("#vanish").dblclick(function(){
+      $(".card1").slideToggle();
+      $("#vanish").slideToggle();
+      alert("您使用了消去卡");
+      
+      let ran = Math.floor(Math.random()*array.length);
+      alert("好人的答案為(參考用) : "+array[ran]);
+   });
+
+    
   })();
