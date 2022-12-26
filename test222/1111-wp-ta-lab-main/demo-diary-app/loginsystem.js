@@ -63,6 +63,7 @@ const db = getFirestore();
 
 const start = () => {
   document.getElementById("login").addEventListener("click", login);
+  document.getElementById("submit").addEventListener("click",insert);
   /*
   document.getElementById("logout").addEventListener("click", logout);
   document
@@ -110,6 +111,15 @@ const login = () => {
     
     });
 };
+
+const insert = () => {
+  setDoc(doc(db, "cities", "LA"), {
+    name: "Los Angeles",
+    state: "CA",
+    country: "USA"
+  });
+}
+
 /*
 const logout = () => {
   auth
