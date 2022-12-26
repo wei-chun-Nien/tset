@@ -62,22 +62,10 @@ const providerGoogle = new GoogleAuthProvider();
 const db = getFirestore();
 
 const start = () => {
-   let lo = document.getElementById("login");
-  if(lo){
-    lo.addEventListener("click",login);
-  }
-  else{
-    alert("oops!!!");
-  }
- 
-  let k = document.getElementById("rank");
-  if(k){
-    k.addEventListener("click",createContent);
-  }
-  else{
-    alert("oops!");
-  }
 
+  document.getElementById("login").addEventListener("click", login);
+  
+  document.getElementById("rank").addEventListener("click", createContent);
   
   document.getElementById("logout").addEventListener("click", logout);
   /*
