@@ -88,7 +88,7 @@ const login = () => {
       const token = credential.accessToken;
       // console.log("token: ", token);
     
-      alert("Welcome to 富士大學堂" + user.user);
+      alert("Welcome to 富士大學堂" + user.displayName);
       console.log("user: ", user);
       console.log("userEmail: ", user.email);
       
