@@ -582,7 +582,7 @@
    const startTime = new Date().getTime();
 
    // 目標時間(要倒數幾秒)。
-   const targetSeconds = 30;
+   const targetSeconds = 360;
    
    // timer.
    var timer = function (startTime) {
