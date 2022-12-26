@@ -106,3 +106,12 @@ button:hover{
   }
 
 }
+
+.helpcard:hover{
+  transform: scale(1.5);
+}
+
+.dismisscard:hover{
+  transform: scale(1.5);
+}
+
